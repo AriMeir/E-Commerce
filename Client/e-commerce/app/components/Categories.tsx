@@ -66,7 +66,7 @@ const Categories = () => {
   const handleChange = (value: string | null) => {
     const params = new URLSearchParams(searchParams)
     params.set("category", value || 'all' )
-    rounter.push(`${pathName}?${params.toString()}`)
+    rounter.push(`${pathName}?${params.toString()}`, {scroll:false})
   }
 
 
